@@ -2,8 +2,7 @@ name: Logistics
 
 on: 
   push: 
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
@@ -14,7 +13,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Setup Python  
-      uses: action/setup-python@v5
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
     - name: Run Script
