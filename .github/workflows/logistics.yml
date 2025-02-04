@@ -1,0 +1,23 @@
+name: Logistics
+
+on: 
+  push: 
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v4
+
+    - name: Setup Python  
+      uses: action/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Run Script
+      run: python ./Shipping_Cost_Calculator.py 
+  
+    
