@@ -18,7 +18,6 @@ jobs:
         python-version: '3.11'
     - name: Run Script
     - run: python Shipping_Cost_Calculator.py
-    - name: Send param
-      run:  echo 2
+
   
     
